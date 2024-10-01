@@ -1,0 +1,47 @@
+{
+  // Short name for the application, used on the home screen when the app is installed
+  "short_name": "React App",
+
+  // Full name of the application, used in the app launcher and other places
+  "name": "Create React App Sample",
+
+  // Array of icon objects to represent the app in various contexts
+  "icons": [
+    {
+      // Path to the favicon file
+      "src": "favicon.ico",
+      // Different sizes of the favicon
+      "sizes": "64x64 32x32 24x24 16x16",
+      // MIME type of the favicon
+      "type": "image/x-icon"
+    },
+    {
+      // Path to the 192x192 logo file
+      "src": "logo192.png",
+      // MIME type of the 192x192 logo
+      "type": "image/png",
+      // Size of the 192x192 logo
+      "sizes": "192x192"
+    },
+    {
+      // Path to the 512x512 logo file
+      "src": "logo512.png",
+      // MIME type of the 512x512 logo
+      "type": "image/png",
+      // Size of the 512x512 logo
+      "sizes": "512x512"
+    }
+  ],
+
+  // URL that the app should start at when launched
+  "start_url": ".",
+
+  // Display mode for the app, "standalone" makes it look like a native app
+  "display": "standalone",
+
+  // Theme color for the app, used in the browser's UI
+  "theme_color": "#000000",
+
+  // Background color for the app's splash screen
+  "background_color": "#ffffff"
+}

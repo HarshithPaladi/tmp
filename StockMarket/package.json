@@ -1,0 +1,40 @@
+{
+  "name": "stock-market", // The name of the project
+  "version": "0.1.0", // The current version of the project
+  "private": true, // Indicates that this project is private and should not be published to a public registry
+  "dependencies": {
+    "@reduxjs/toolkit": "^2.2.7", // State management library for Redux
+    "@testing-library/jest-dom": "^5.17.0", // Custom jest matchers for testing DOM nodes
+    "@testing-library/react": "^13.4.0", // Simple and complete React DOM testing utilities
+    "@testing-library/user-event": "^13.5.0", // Simulates user events for testing
+    "react": "^18.3.1", // React library for building user interfaces
+    "react-dom": "^18.3.1", // React package for working with the DOM
+    "react-redux": "^9.1.2", // Official React bindings for Redux
+    "react-scripts": "5.0.1", // Scripts and configuration used by Create React App
+    "web-vitals": "^2.1.4" // Library for measuring web performance metrics
+  },
+  "scripts": {
+    "start": "react-scripts start", // Starts the development server
+    "build": "react-scripts build", // Bundles the app into static files for production
+    "test": "react-scripts test", // Starts the test runner
+    "eject": "react-scripts eject" // Removes the single build dependency from the project
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app", // Uses the default Create React App ESLint configuration
+      "react-app/jest" // Adds Jest-specific linting rules
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%", // Browsers with more than 0.2% market share
+      "not dead", // Excludes browsers that are no longer maintained
+      "not op_mini all" // Excludes Opera Mini
+    ],
+    "development": [
+      "last 1 chrome version", // The last version of Chrome
+      "last 1 firefox version", // The last version of Firefox
+      "last 1 safari version" // The last version of Safari
+    ]
+  }
+}

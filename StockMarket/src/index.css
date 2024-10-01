@@ -1,0 +1,178 @@
+/* 
+ * Apply a reset to all elements and their pseudo-elements to remove default margin and padding.
+ */
+*, *::before, *::after {
+  margin: 0; 
+  padding: 0; 
+}
+
+/* 
+ * Set the background color and text color for the body.
+ * Add padding around the body content.
+ */
+body {
+  background-color: #1a1625;
+  color: rgba(249, 239, 239, 0.808);
+  padding: 2rem;
+}
+
+/* 
+ * Style for stock names to handle overflow with ellipsis.
+ * Ensures the text does not wrap and is constrained to 33% width.
+ */
+.stock-name {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 33%;
+  white-space: nowrap;
+}
+
+/* 
+ * Style for individual stock list items.
+ * Remove default list style, set background, padding, and flexbox properties.
+ * Add shadow and rounded corners for better visual appearance.
+ */
+.stock-list-item {
+  list-style: none;
+  background: #544872;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 1px 1px 4px grey;
+  border-radius: 4px;
+}
+
+/* 
+ * Style for the buy button.
+ * Set padding, cursor, outline, background, border, and border-radius.
+ */
+.buy-button {
+  padding: 0.25rem 0.75rem;
+  cursor: pointer;
+  outline: none;
+  background: #9a91ac;
+  border: none;
+  border-radius: 2px;
+}
+
+/* 
+ * Style for the sell button.
+ * Set padding, cursor, outline, background, border, and border-radius.
+ */
+.sell-button {
+  padding: 0.25rem 0.75rem;
+  cursor: pointer;
+  outline: none;
+  background: rgb(190, 116, 222);
+  border: none;
+  border-radius: 2px;
+}
+
+/* 
+ * Flexbox utility classes for different flex directions.
+ */
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+/* 
+ * Flexbox utility classes for alignment and justification.
+ */
+.flex-center {
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-space-between {
+  justify-content: space-between;
+}
+
+.flex-space-around {
+  justify-content: space-around;
+}
+
+.flex-space-evenly {
+  justify-content: space-evenly;
+}
+
+.flex-start {
+  justify-content: flex-start;
+}
+
+.flex-end {
+  justify-content: flex-end;
+}
+
+/* 
+ * Flexbox utility classes for alignment along the cross axis.
+ */
+.align-start {
+  align-items: flex-start;
+}
+
+.align-end {
+  align-items: flex-end;
+}
+
+.align-center {
+  align-items: center;
+}
+
+/* 
+ * Utility classes for setting gaps between flex items.
+ */
+.gap-1 {
+  gap: 1rem;
+}
+
+.gap-2 {
+  gap: 2rem;
+}
+
+.gap-3 {
+  gap: 3rem;
+}
+
+.gap-1-5 {
+  gap: 1.5rem;
+}
+
+.gap-2-5 {
+  gap: 2.5rem;
+}
+
+.gap-0-5 {
+  gap: 0.5rem;
+}
+
+/* 
+ * Flexbox utility classes for flex-grow, flex-shrink, and flex-basis properties.
+ */
+.flex-grow {
+  flex-grow: 1;
+}
+
+.flex-shrink {
+  flex-shrink: 1;
+}
+
+.flex-basis-1 {
+  flex-basis: 1;
+}
+
+.flex-basis-0 {
+  flex-basis: 0;
+}
+
+/* 
+ * Flexbox utility class to enable wrapping of flex items.
+ */
+.flex-wrap {
+  flex-wrap: wrap;
+}
