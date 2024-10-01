@@ -1,15 +1,14 @@
-import { StockListItem } from './StockListItem'; // Importing the StockListItem component
-import { useSelector } from 'react-redux'; // Importing the useSelector hook from react-redux to access the Redux store
+import { StockListItem } from './StockListItem';
+import { useSelector } from 'react-redux';
 
 /**
- * StockList Component
- * This component is responsible for rendering a list of stocks.
- * It uses the useSelector hook to access the stocks from the Redux store.
- * Each stock is rendered using the StockListItem component.
+ * StockList component
+ * This component is responsible for displaying a list of stocks.
+ * It uses the `useSelector` hook to access the stocks from the Redux store.
  */
 export const StockList = () => {
 
-  // Accessing the stocks from the Redux store
+  // Retrieve the list of stocks from the Redux store
   const stocks = useSelector(state => state.stocks);
 
   return (
@@ -17,11 +16,16 @@ export const StockList = () => {
       <h2>Stock List</h2>
 
       <ul className="flex-column gap-1">
-        {/* Mapping through the stocks array and rendering a StockListItem for each stock */}
-        {stocks.map((stock) => (
-          <StockListItem key={stock.id} stock={stock}>
-          </StockListItem>
-        ))}
+        {stocks.length === 0 ? (
+          // Display a message if no stocks are available
+          <p>No stocks available</p>
+        ) : (
+          // Map through the list of stocks and render a StockListItem for each stock
+          stocks.map((stock) => (
+            <StockListItem key={stock.id} stock={stock}>
+            </StockListItem>
+          ))
+        )}
       </ul>
     </div>
   );
