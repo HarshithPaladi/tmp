@@ -1,8 +1,9 @@
+// Exporting a constant array named STOCK_LIST which contains a list of stock objects
 export const STOCK_LIST = [
     {
-        id: 1,
-        name: 'Apple',
-        price: 145.83,
+        id: 1, // Unique identifier for the stock
+        name: 'Apple', // Name of the company
+        price: 145.83, // Current price of the stock
     },
     {
         id: 2,
@@ -78,16 +79,75 @@ export const STOCK_LIST = [
         id: 16,
         name: 'Oracle Corporation',
         price: 88.75,
+    },
+    {
+        id: 17,
+        name: 'IBM',
+        price: 142.30,
+    },
+    {
+        id: 18,
+        name: 'Twitter, Inc.',
+        price: 65.97,
+    },
+    {
+        id: 19,
+        name: 'Snap Inc.',
+        price: 75.11,
+    },
+    {
+        id: 20,
+        name: 'Uber Technologies, Inc.',
+        price: 44.15,
+    },
+    {
+        id: 21,
+        name: 'Lyft, Inc.',
+        price: 53.21,
+    },
+    {
+        id: 22,
+        name: 'Spotify Technology S.A.',
+        price: 242.11,
+    },
+    {
+        id: 23,
+        name: 'Shopify Inc.',
+        price: 1540.00,
+    },
+    {
+        id: 24,
+        name: 'Square, Inc.',
+        price: 247.26,
+    },
+    {
+        id: 25,
+        name: 'Zoom Video Communications, Inc.',
+        price: 289.50,
+    },
+    {
+        id: 26,
+        name: 'Pinterest, Inc.',
+        price: 58.44,
+    },
+    {
+        id: 27,
+        name: 'Palantir Technologies Inc.',
+        price: 25.31,
+    },
+    {
+        id: 28,
+        name: 'Roku, Inc.',
+        price: 325.12,
+    },
+    {
+        id: 29,
+        name: 'DocuSign, Inc.',
+        price: 310.05,
+    },
+    {
+        id: 30,
+        name: 'Snowflake Inc.',
+        price: 240.00,
     }
 ]
-
-/**
- * STOCK_LIST is an array of objects where each object represents a stock.
- * Each stock object contains the following properties:
- * - id: A unique identifier for the stock (number).
- * - name: The name of the company (string).
- * - price: The current price of the stock (number).
- *
- * This list can be used to display stock information, perform stock-related calculations,
- * or any other operations related to stock market data within the application.
- */
