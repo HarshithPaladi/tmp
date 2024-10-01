@@ -1,4 +1,9 @@
-// Exporting a constant array named STOCK_LIST which contains a list of stock objects
+/**
+ * @file data.js
+ * @description This file contains a list of stock data for various companies. Each stock entry includes an id, name, and price.
+ */
+
+// Exporting a constant array named STOCK_LIST which contains objects representing different stocks
 export const STOCK_LIST = [
     {
         id: 1, // Unique identifier for the stock
@@ -23,7 +28,7 @@ export const STOCK_LIST = [
     {
         id: 5,
         name: 'Facebook, Inc.',
-        price: 355.64,
+        price: 365.00,
     },
     {
         id: 6,
